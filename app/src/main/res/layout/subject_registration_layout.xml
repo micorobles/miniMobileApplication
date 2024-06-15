@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".AdminSubjects">
+
+    <LinearLayout
+        android:id="@+id/ContainerRegSubj"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_menu_white"
+        android:elevation="20dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/tvLayoutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Edit Subject"
+            android:visibility="gone"
+            android:textColor="@color/basteBrown"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Subject Details:"
+            android:textColor="@color/greenDark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" />
+
+        <EditText
+            android:id="@+id/etSubjCode"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/fields_design"
+            android:elevation="10dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="@string/hintSubjectCode"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif"
+            android:visibility="gone"
+            android:text="Student Full Name"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="sans-serif"
+            android:visibility="gone"
+            android:text="Robles, Michol John C."
+            android:textColor="@color/greenLight"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etSubjDesc"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/fields_design"
+            android:elevation="10dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="@string/hintSubjectDescr"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            android:fontFamily="sans-serif"
+            android:text="Student Full Name"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            android:fontFamily="sans-serif"
+            android:text="Robles, Michol John C."
+            android:textColor="@color/greenLight"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="250dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_rounded"
+            android:backgroundTint="@null"
+            android:fontFamily="sans-serif"
+            android:text="Add"
+            android:textColor="@color/white"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btnSubjUpdate"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_rectangle"
+            android:backgroundTint="@null"
+            android:fontFamily="sans-serif"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            app:backgroundTint="@null" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

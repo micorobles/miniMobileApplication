@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout"
+    android:id="@+id/rootHomePage"
+    tools:context=".HomePage">
+
+    <GridLayout
+        android:id="@+id/GridHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="15dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="GoBack"
+                android:src="@drawable/ic_baseline_arrow_back_24" />
+
+            <TextView
+                android:id="@+id/tvRegistrationTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif"
+                android:text="Who do you wish to evaluate?"
+                android:textColor="@color/basteBrown"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/logo_original" />
+        </LinearLayout>
+    </GridLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ContainerSignIn"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="158dp"
+        android:padding="10dp"
+        android:background="@drawable/layout_front"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/GridHeader">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvSeeEvaluated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:padding="3dp"
+                android:onClick="SeeEvaluated"
+                android:text="History >"
+                android:textColor="@color/greenDark"
+                android:textSize="15dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvStudCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="sans-serif"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="Hello, Mico"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                     />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/ivStudImg"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:onClick="ViewProfile"
+                    android:padding="5dp"
+                    android:layout_marginLeft="120dp"
+                    app:shapeAppearanceOverlay="@style/circular"
+                    app:strokeColor="@color/greenDark"
+                    app:strokeWidth="1dp" />
+
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dropdown1"
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:hint="Select Professor"
+                android:focusable="false"
+                app:boxStrokeErrorColor="@color/red"
+                android:elevation="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivStudImg">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTxtProf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dropDownAnchor="@+id/dropdown1"
+                    android:dropDownHeight="190dp"
+                    android:layout_weight="1"
+                    android:inputType="none"
+                    android:text="" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                app:boxStrokeErrorColor="@color/red"
+                android:focusable="false"
+                android:elevation="4dp"
+                android:id="@+id/dropdown2"
+                android:layout_marginTop="10dp"
+                android:hint="Select Subject">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTxtSubj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dropDownAnchor="@+id/dropdown2"
+                    android:dropDownHeight="190dp"
+                    android:layout_weight="1"
+                    android:inputType="none"
+                    android:forceHasOverlappingRendering="true"
+                    android:text="" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnEvaluate"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_rectangle"
+                android:backgroundTint="@null"
+                android:fontFamily="sans-serif"
+                android:text="@string/Evaluate"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

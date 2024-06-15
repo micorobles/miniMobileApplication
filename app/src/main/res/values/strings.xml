@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">E-val</string>
+
+    <string name="username">Student ID:</string>
+    <string name="password">Password:</string>
+    <string name="SignIn">Sign In</string>
+    <string name="ForgotPass">Forgot Password?</string>
+    <string name="Submit">Submit</string>
+    <string name="Logout">Log-out</string>
+    <string name="Login">Log In</string>
+    <string name="Back">Back</string>
+    <string name="Evaluate">Evaluate</string>
+    <string name="Professor"><u>I am a Professor</u></string>
+    <string name="Student"><u>I am a Student</u></string>
+    <string name="Registration">Register</string>
+
+    <string name="hintNumber"><font face="serif" size="13">Student Number</font></string>
+    <string name="hintEmail"><font face="serif" size="13">Student Email</font></string>
+    <string name="hintLname"><font face="serif" size="13">Surname</font></string>
+    <string name="hintFname"><font face="serif" size="13">First Name</font></string>
+    <string name="hintMname"><font face="serif" size="13">Middle</font></string>
+    <string name="hintPassword"><font face="serif" size="13">Student Password</font></string>
+    <string name="hintSubjectCode"><font face="serif" size="13">Subject Code</font></string>
+    <string name="hintSubjectDescr"><font face="serif" size="13">Subject Description </font></string>
+    <string name="hintChooseProf"><font face="serif" size="13">Professor</font></string>
+    <string name="hintChooseSubj"><font face="serif" size="13">Subject</font></string>
+
+
+    <string name="hintpEmail"><font face="serif" size="13">Professor Email</font></string>
+    <string name="hintpLname"><font face="serif" size="13">Surname</font></string>
+    <string name="hintpFname"><font face="serif" size="13">First Name</font></string>
+    <string name="hintpMname"><font face="serif" size="13">Middle</font></string>
+    <string name="hintpPassword"><font face="serif" size="13">Professor Password</font></string>
+    <string name="hintpPosition"><font face="serif" size="13">Professor Position</font></string>
+
+    <string name="evalTitle1">Course Organization and Planning</string>
+    <string name="evalTitle2">Student Information</string>
+
+    <string name="evalTxt1">Course was well organized</string>
+    <string name="evalTxt2">Materials were properly explained</string>
+    <string name="evalTxt3">Professor made the class interesting</string>
+    <string name="evalTxt4">Learning expectations were clearly stated in the course</string>
+    <string name="evalTxt5">Rate your overall experience of the course</string>
+    <string name="evalTxt6">The effort I exerted for this subject</string>
+    <string name="evalTxt7">Amount of absences on this subject</string>
+    <string name="evalTxt8">I expect a high grade on this subject</string>
+    <string name="evalTxt9">I enjoyed this class</string>
+    <string name="evalTxt10">The course gave me the confidence to do more advanced work in the subject</string>
+
+    <string name="resultTitle">Evaluated Professors</string>
+
+
+</resources>

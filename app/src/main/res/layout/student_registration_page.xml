@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout"
+    tools:context=".StudentRegistrationPage"
+    android:id="@+id/rootStudUpdt">
+
+    <GridLayout
+        android:id="@+id/GridHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="7dp"
+                android:layout_gravity="left"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="GoBack"
+                android:src="@drawable/ic_baseline_arrow_back_24" />
+
+            <TextView
+                android:id="@+id/tvRegistrationTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Student Account Registration"
+                android:textColor="@color/basteBrown"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/baste_logo" />
+        </LinearLayout>
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/ContainerSignIn"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/layout_front"
+        android:elevation="20dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GridHeader"
+        app:layout_constraintVertical_bias="0.508">
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Student Photo:"
+            android:textColor="@color/greenDark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivStudImg"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_image_24"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="128dp" />
+
+        <Button
+            android:id="@+id/btnUploadImg"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:fontFamily="sans-serif"
+            android:text="Student Photo"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="128dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Student Details:"
+            android:textColor="@color/greenDark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etStudLname"
+                android:layout_width="95dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/fields_design"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hint="@string/hintLname" />
+
+            <EditText
+                android:id="@+id/etStudFname"
+                android:layout_width="95dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/fields_design"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hint="@string/hintFname" />
+
+            <EditText
+                android:id="@+id/etStudMname"
+                android:layout_width="95dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/fields_design"
+                android:elevation="10dp"
+                android:ems="10"
+                android:hint="@string/hintMname" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etStudNum"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/fields_design"
+            android:elevation="10dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="@string/hintNumber"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/etStudEmail"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/fields_design"
+            android:elevation="10dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="@string/hintEmail"
+            android:textAlignment="center" />
+
+
+        <EditText
+            android:id="@+id/etStudPassword"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/fields_design"
+            android:elevation="10dp"
+            android:ems="10"
+            android:hint="@string/hintPassword"
+            android:password="true"
+            android:textAlignment="center" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="250dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/button_rounded"
+            android:backgroundTint="@null"
+            android:fontFamily="sans-serif"
+            android:text="@string/Registration"
+            android:textColor="@color/white"
+            app:backgroundTint="@null" />
+
+    <LinearLayout
+        android:id="@+id/LinearUpdateBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_rectangle"
+            android:backgroundTint="@null"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_rectangle"
+            android:backgroundTint="@null"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Update"
+            android:textColor="@color/white"
+            app:backgroundTint="@null" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout"
+    tools:context=".TeachingLoad"
+    android:id="@+id/rootLoad">
+
+    <GridLayout
+        android:id="@+id/GridHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="7dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="GoBack"
+                android:src="@drawable/ic_baseline_arrow_back_24" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Teaching Load"
+                android:textColor="@color/basteBrown"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:onClick="GoBack"
+                android:src="@drawable/baste_logo" />
+        </LinearLayout>
+    </GridLayout>
+
+    <ListView
+        android:id="@+id/lvTeachingLoad"
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:elevation="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/layout_front" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingAddLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/basteBrown"
+        android:src="@drawable/ic_baseline_add_24"
+        app:elevation="10dp"
+        app:fabCustomSize="80dp"
+        app:fabSize="auto"
+        app:maxImageSize="50dp"
+        tools:layout_editor_absoluteX="295dp"
+        tools:layout_editor_absoluteY="564dp">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+</FrameLayout>
+
+
+
+

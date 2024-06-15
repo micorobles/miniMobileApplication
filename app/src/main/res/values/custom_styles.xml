@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="circular">
+        <item name="cornerSize">50%</item>
+
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+        <item name="boxStrokeColor">@color/gray</item>
+        <item name="hintTextColor">@color/greenLight</item>
+        <item name="endIconTint">@color/greenLight</item>
+    </style>
+
+    <style name="RatingBar" parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="colorControlNormal">@color/material_dynamic_neutral10</item>
+        <item name="colorControlActivated">@color/material_dynamic_primary0</item>
+    </style>
+
+<!--    <style name="CustomRatingBar" parent="@android:style/Widget.RatingBar.Small">-->
+<!--        <item name="android:numStars">5</item>-->
+<!--        <item name="android:stepSize">1.0</item>-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:layout_marginLeft">4dp</item>-->
+<!--    </style>-->
+
+
+        <style name="customRatingBar" parent="@android:style/Widget.RatingBar">
+            <item name="android:progressDrawable">@drawable/customized_star</item>
+            <item name="android:minHeight">30dp</item>
+            <item name="android:maxHeight">30dp</item>
+        </style>
+
+
+
+</resources>
